@@ -5,14 +5,15 @@ void main() {
     MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        appBar: AppBar(
+          title: Text("Картинка"),
+          backgroundColor: Colors.brown,
+        ),
         body: Center(
-          child: Text(
-            "Привет! Меня зовут Шумила Диана\nЯ студентка группы ИСП-233",
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-            ),
+          child: Image.network(
+            "https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg",
+            width: 300,
+            height: 300,
           ),
         ),
       ),
